@@ -13,9 +13,9 @@ source:
   sha256: ffa496edc2aaf3d11eedb55e1f05f30c9c9959b5453035ebe25c53c8dde853c9
 
 build:
-  merge_build_host: true  # [win]
+  merge_build_host: True  # [win]
   number: 0
-  skip: true  # [r_base == "3.5.1"]
+  noarch: generic
   rpaths:
     - lib/R/lib/
     - lib/
@@ -23,17 +23,18 @@ build:
 requirements:
   build:
     - {{ posix }}zip               # [win]
+    - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
     - r-kernsmooth
     - r-mass
-    - r-alakazam >=1.0.0
+    - r-alakazam >=1.1.0
     - r-ape
     - r-diptest
     - r-doparallel
     - r-dplyr >=0.8.1
     - r-foreach
-    - r-ggplot2 >=2.0.0
+    - r-ggplot2 >=3.3.4
     - r-igraph
     - r-iterators
     - r-kedd
@@ -49,13 +50,13 @@ requirements:
     - r-base
     - r-kernsmooth
     - r-mass
-    - r-alakazam >=1.0.0
+    - r-alakazam >=1.1.0
     - r-ape
     - r-diptest
     - r-doparallel
     - r-dplyr >=0.8.1
     - r-foreach
-    - r-ggplot2 >=2.0.0
+    - r-ggplot2 >=3.3.4
     - r-igraph
     - r-iterators
     - r-kedd
