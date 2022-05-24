@@ -1,4 +1,4 @@
-{% set version = "1.0.2" %}
+{% set version = "1.1.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/shazam_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/shazam/shazam_{{ version }}.tar.gz
-  sha256: 98d8e5d65ad49aee238ae5387d89bf890b51fb28d6da4ca1c846b6e748148a6c
+  sha256: e67a152ac2b506272baf26ca70f35862a65028d6cbdd73e13a69003c0d646962
 
 build:
   merge_build_host: true  # [win]
