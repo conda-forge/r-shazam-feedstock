@@ -3,6 +3,7 @@ About r-shazam-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-shazam-feedstock/blob/main/LICENSE.txt)
 
+
 About r-shazam
 --------------
 
@@ -11,6 +12,7 @@ Home: http://shazam.readthedocs.io
 Package license: AGPL-3.0-only
 
 Summary: Provides a computational framework for analyzing mutations in immunoglobulin (Ig) sequences. Includes methods for Bayesian estimation of antigen-driven selection pressure, mutational load quantification, building of somatic hypermutation (SHM) models, and model-dependent distance calculations. Also includes empirically derived models of SHM for both mice and humans. Citations: Gupta and Vander Heiden, et al (2015) <doi:10.1093/bioinformatics/btv359>, Yaari, et al (2012) <doi:10.1093/nar/gks457>, Yaari, et al (2013) <doi:10.3389/fimmu.2013.00358>, Cui, et al (2016) <doi:10.4049/jimmunol.1502263>.
+
 About r-shazam
 --------------
 
